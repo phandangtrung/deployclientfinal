@@ -116,7 +116,7 @@ function ShoppingPage(props) {
   const [usprice, setusprice] = useState(0);
   const [codeloading, setcodeloading] = useState(false);
   const MAPBOX_TOKEN =
-    "pk.eyJ1IjoidHJ1bmdwaGFuOTkiLCJhIjoiY2twb3VybHVrMGN1azJ2cGJ4OXd0Z3V6ayJ9.8XSBVvSrcYdGvt8xOyj-ag";
+    "pk.eyJ1IjoidHJ1bmdwaGFuOTkiLCJhIjoiY2txZmI3cDl5MG42ODJvc2N1emRqcndqYyJ9.-QdtnY-bLP8PSXMwwXuQEA";
   const [form] = Form.useForm();
   const [coordinates, setCoordinates] = useState({
     lat: 10.850899,
