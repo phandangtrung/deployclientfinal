@@ -46,6 +46,7 @@ import Modal from "antd/lib/modal/Modal";
 function ShoppingPage(props) {
   const { Text, Link } = Typography;
   useEffect(() => {
+    console.log(">>MAPBOX_TOKEN", MAPBOX_TOKEN);
     Geocode.setApiKey("AIzaSyCGncPyxKmV_5JpsaVpg66nw5MuqpL6FT4");
     const fetchProductList = async () => {
       try {
@@ -617,7 +618,7 @@ function ShoppingPage(props) {
                     onViewportChange={setViewport}
                     mapboxApiAccessToken={MAPBOX_TOKEN}
                     // onClick={onMapClick}
-                    mapStyle="mapbox://styles/mapbox/dark-v8"
+                    mapStyle="mapbox://styles/mapbox/streets-v11"
                   >
                     {/* <Marker
                       latitude={locamark.latitude}
