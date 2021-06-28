@@ -609,7 +609,7 @@ function ShoppingPage(props) {
                     onViewportChange={setViewport}
                     mapboxApiAccessToken={MAPBOX_TOKEN}
                   /> */}
-                  <MapGL
+                  <ReactMapGL
                     {...viewport}
                     ref={mapRef}
                     width="100%"
@@ -651,7 +651,7 @@ function ShoppingPage(props) {
                       mapboxApiAccessToken={MAPBOX_TOKEN}
                       position="top-left"
                     /> */}
-                  </MapGL>
+                  </ReactMapGL>
                 </div>
               </Form.Item>
               <Row>
