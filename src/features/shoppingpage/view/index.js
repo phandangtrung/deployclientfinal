@@ -43,11 +43,6 @@ import productApi from "../../../api/productApi";
 import orderApi from "../../../api/orderApi";
 import couponApi from "../../../api/couponApi";
 import Modal from "antd/lib/modal/Modal";
-import "mapbox-gl/dist/mapbox-gl.css";
-import mapboxgl from "mapbox-gl";
-// eslint-disable-next-line import/no-webpack-loader-syntax
-mapboxgl.workerClass =
-  require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 function ShoppingPage(props) {
   const { Text, Link } = Typography;
   useEffect(() => {
