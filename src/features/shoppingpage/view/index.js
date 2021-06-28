@@ -34,7 +34,7 @@ import {
 import axios from "axios";
 import markerlog from "../../../84e468a8fff79b66406ef13d3b8653e2-house-location-marker-icon-by-vexels.png";
 import MapGL from "react-map-gl";
-import ReactMapGL, { Marker, GeolocateControl } from "react-map-gl";
+import ReactMapGL, { Marker, GeolocateControl } from "!react-map-gl";
 import Mapstore from "../../../components/Maps/Maps";
 import "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import Geocoder from "react-map-gl-geocoder";
@@ -43,6 +43,7 @@ import productApi from "../../../api/productApi";
 import orderApi from "../../../api/orderApi";
 import couponApi from "../../../api/couponApi";
 import Modal from "antd/lib/modal/Modal";
+import mapboxgl from "!mapbox-gl";
 function ShoppingPage(props) {
   const { Text, Link } = Typography;
   useEffect(() => {
