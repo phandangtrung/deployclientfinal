@@ -628,7 +628,7 @@ function ShoppingPage(props) {
                     >
                       <img style={{ height: 40, width: 40 }} src={markerlog} />
                     </Marker> */}
-                    <Geocoder
+                    {/* <Geocoder
                       mapRef={mapRef}
                       containerRef={geocoderContainerRef}
                       onViewportChange={handleGeocoderViewportChange}
@@ -637,7 +637,7 @@ function ShoppingPage(props) {
                       placeholder="Tìm vị trí"
                       language="vi-VI"
                       onResult={handleOnResult}
-                    />
+                    /> */}
                     <GeolocateControl
                       style={geolocateControlStyle}
                       positionOptions={{ enableHighAccuracy: true }}
