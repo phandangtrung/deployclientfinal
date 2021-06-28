@@ -617,7 +617,7 @@ function ShoppingPage(props) {
                     onViewportChange={setViewport}
                     mapboxApiAccessToken={MAPBOX_TOKEN}
                     // onClick={onMapClick}
-                    mapStyle="mapbox://styles/mapbox/streets-v11"
+                    mapStyle="mapbox://styles/mapbox/dark-v8"
                   >
                     {/* <Marker
                       latitude={locamark.latitude}
