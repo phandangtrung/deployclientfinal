@@ -43,7 +43,6 @@ import productApi from "../../../api/productApi";
 import orderApi from "../../../api/orderApi";
 import couponApi from "../../../api/couponApi";
 import Modal from "antd/lib/modal/Modal";
-
 function ShoppingPage(props) {
   const { Text, Link } = Typography;
   useEffect(() => {
@@ -610,7 +609,7 @@ function ShoppingPage(props) {
                     onViewportChange={setViewport}
                     mapboxApiAccessToken={MAPBOX_TOKEN}
                   /> */}
-                  <ReactMapGL
+                  <MapGL
                     {...viewport}
                     ref={mapRef}
                     width="100%"
@@ -628,7 +627,7 @@ function ShoppingPage(props) {
                     >
                       <img style={{ height: 40, width: 40 }} src={markerlog} />
                     </Marker> */}
-                    {/* <Geocoder
+                    <Geocoder
                       mapRef={mapRef}
                       containerRef={geocoderContainerRef}
                       onViewportChange={handleGeocoderViewportChange}
@@ -637,7 +636,7 @@ function ShoppingPage(props) {
                       placeholder="Tìm vị trí"
                       language="vi-VI"
                       onResult={handleOnResult}
-                    /> */}
+                    />
                     <GeolocateControl
                       style={geolocateControlStyle}
                       positionOptions={{ enableHighAccuracy: true }}
@@ -652,7 +651,7 @@ function ShoppingPage(props) {
                       mapboxApiAccessToken={MAPBOX_TOKEN}
                       position="top-left"
                     /> */}
-                  </ReactMapGL>
+                  </MapGL>
                 </div>
               </Form.Item>
               <Row>
