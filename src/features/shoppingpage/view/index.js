@@ -217,6 +217,9 @@ function ShoppingPage(props) {
         // setisloadorder(false);
         localStorage.removeItem("cart");
         setcart([]);
+        setfaketotal(0);
+        setcodeprice(0);
+
         notification.open({
           message: "Đặt hàng thành công",
           description: "Cảm ơn bạn đã ủng hộ TheCoffeeShop",
