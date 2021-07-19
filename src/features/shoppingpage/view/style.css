@@ -13,14 +13,14 @@
 .shopping-card .cart-container {
   width: 80%;
   height: auto;
-  padding: 50px 0px 50px 0px;
+  padding: 70px 0px 50px 0px;
 }
 .shopping-card .title-form {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .shopping-card .title-form .title {
@@ -78,7 +78,7 @@
 .saleoff-form .title {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 .saleoff-form .button-apply {
   width: 100%;
